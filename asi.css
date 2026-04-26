@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("asics imgs/asi.jpg");
+  background-attachment: fixed;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 70px;
+}
+
+  header {
+  background-color: rgba(155, 5, 155, 0.988);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px; 
+}
+
+    .left-menu, .right-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.left-menu a, .right-menu a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.left-menu a:hover, .right-menu a:hover {
+  text-decoration: underline;
+  color: white;
+  padding: 8px 15px;
+  transition: background 0.3s, color 0.3s;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+  background-color: blue;
+} 
+
+   nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+  h1 {
+  text-align: center;
+  color: orange;
+  margin-bottom: 50px;
+}
+  
+  h2 {
+  text-align: center;
+  color: white(239, 248, 247, 0);
+  margin-bottom: 50px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin: 2px auto;
+  padding: 2px;
+  background-color: transparent;
+  border-radius: 40px;
+  padding-bottom: 100px;
+}
+
+.card {
+  background-color: pink;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px orange;
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background-color: palegreen;
+  box-shadow: 0 0 10px orange;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+  .card h2 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.price {
+  font-size: 16px;
+  color: #000;
+}
+
+.discount {
+  color: green;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+  .add-cart {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.add-cart:hover {
+  box-shadow: 0 0 10px orange;
+  transform: translateY(-10px);
+    background-color: purple;
+    box-shadow: 0 0 10px red;
+}
+
+

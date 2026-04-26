@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="wish.css">
+</head>
+
+<body>
+    <header style="background-color: lightcoral;">
+        <h2>Sports gearup Store 🎯</h2>
+        <h3>WISH LIST</h3>
+        <div class="left-menu">
+            <a href="index.html">Home</a>
+            <a href="cat.html">Categories</a>
+            <a href="about.html">About us</a>
+        </div>
+        <div class="right-menu">
+            <a href="#">❤️</a>
+            <a href="#">🔍</a>
+            <a href="#">🛒</a>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1>My Wishlist</h1>
+            <p>Keep track of your favorite sports equipment and gear</p>
+            <div class="wishlist-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalItems">8</span>
+                    <span class="stat-label">Items Saved</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="totalValue">$1,247</span>
+                    <span class="stat-label">Total Value</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="onSale">3</span>
+                    <span class="stat-label">On Sale</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="main-content">
+            <div class="wishlist-header">
+                <div class="wishlist-controls">
+                    <div class="sort-filter">
+                        <label for="sortBy">Sort by:</label>
+                        <select id="sortBy">
+                            <option value="newest">Newest First</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Name A-Z</option>
+                        </select>
+
+                        <label for="filterBy">Filter:</label>
+                        <select id="filterBy">
+                            <option value="all">All Items</option>
+                            <option value="sale">On Sale</option>
+                            <option value="available">In Stock</option>
+                            <option value="category">By Category</option>
+                        </select>
+                    </div>
+
+                    <div class="view-toggle">
+                        <button class="view-btn active" id="gridView">🔲 Grid</button>
+                        <button class="view-btn" id="listView">📋 List</button>
+                    </div>
+
+                    <div class="wishlist-actions">
+                        <button class="action-btn" id="shareWishlist">📤 Share</button>
+                        <button class="action-btn" id="clearAll">Clear All</button>
+                        <button class="action-btn primary" id="addAllToCart">🛒 Add All to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wishlist-content">
+                <div class="wishlist-grid active" id="gridContainer">
+                    <div class="wishlist-item">
+                        <div class="item-image">
+                            🏃â€â™‚ï¸
+                            <div class="item-badge sale">25% OFF</div>
+                            <button class="remove-btn" onclick="removeItem(this)">Ã—</button>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-brand">Nike</div>
+                            <div class="item-title">Air Zoom Pegasus 40</div>
+                            <div class="item-price">
+                                <span class="current-price">$97</span>
+                                <span class="original-price">$130</span>
+                                <span class="discount">25% OFF</span>
+                            </div>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(324 reviews)</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                                <button class="share-btn">📤</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wishlist-item">
+                        <div class="item-image">
+                            🏀
+                            <div class="item-badge new">NEW</div>
+                            <button class="remove-btn" onclick="removeItem(this)">Ã—</button>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-brand">Spalding</div>
+                            <div class="item-title">NBA Official Basketball</div>
+                            <div class="item-price">
+                                <span class="current-price">$59</span>
+                            </div>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(156 reviews)</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                                <button class="share-btn">📤</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wishlist-item">
+                        <div class="item-image">
+                            🎾
+                            <button class="remove-btn" onclick="removeItem(this)">Ã—</button>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-brand">Wilson</div>
+                            <div class="item-title">Pro Staff Tennis Racket</div>
+                            <div class="item-price">
+                                <span class="current-price">$189</span>
+                            </div>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(89 reviews)</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                                <button class="share-btn">📤</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wishlist-item">
+                        <div class="item-image">
+                            🏋️‍♂️
+                            <div class="item-badge sale">15% OFF</div>
+                            <button class="remove-btn" onclick="removeItem(this)">Ã—</button>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-brand">Bowflex</div>
+                            <div class="item-title">Adjustable Dumbbells Set</div>
+                            <div class="item-price">
+                                <span class="current-price">$299</span>
+                                <span class="original-price">$349</span>
+                                <span class="discount">15% OFF</span>
+                            </div>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(267 reviews)</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                                <button class="share-btn">📤</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wishlist-item">
+                        <div class="item-image">
+                            🚴‍♂️
+                            <button class="remove-btn" onclick="removeItem(this)">Ã—</button>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-brand">Trek</div>
+                            <div class="item-title">Mountain Bike Helmet</div>
+                            <div class="item-price">
+                                <span class="current-price">$79</span>
+                            </div>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(143 reviews)</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                                <button class="share-btn">📤</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wishlist-item">
+                        <div class="item-image">
+                            🏊‍♂️
+                            <div class="item-badge sale">30% OFF</div>
+                            <button class="remove-btn" onclick="removeItem(this)">Ã—</button>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-brand">Speedo</div>
+                            <div class="item-title">Competition Swimsuit</div>
+                            <div class="item-price">
+                                <span class="current-price">$84</span>
+                                <span class="original-price">$120</span>
+                                <span class="discount">30% OFF</span>
+                            </div>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(98 reviews)</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                                <button class="share-btn">📤</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wishlist-item">
+                        <div class="item-image">
+                            âš½
+                            <button class="remove-btn" onclick="removeItem(this)">Ã—</button>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-brand">Adidas</div>
+                            <div class="item-title">FIFA World Cup Soccer Ball</div>
+                            <div class="item-price">
+                                <span class="current-price">$45</span>
+                            </div>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(201 reviews)</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                                <button class="share-btn">📤</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="wishlist-item">
+                        <div class="item-image">
+                            âš½
+                            <button class="remove-btn" onclick="removeItem(this)">Ã—</button>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-brand">Adidas</div>
+                            <div class="item-title">FIFA World Cup Soccer Ball</div>
+                            <div class="item-price">
+                                <span class="current-price">$45</span>
+                            </div>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(201 reviews)</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                                <button class="share-btn">📤</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="wishlist-item">
+                        <div class="item-image">
+                            🏉
+                            <button class="remove-btn" onclick="removeItem(this)">Ã—</button>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-brand">Butterfly</div>
+                            <div class="item-title">Professional Ping Pong Paddle</div>
+                            <div class="item-price">
+                                <span class="current-price">$125</span>
+                            </div>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">(76 reviews)</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                                <button class="share-btn">📤</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wishlist-list" id="listContainer">
+                    <!-- List view items will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

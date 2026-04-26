@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: lightpink;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .cart-container {
+      max-width: 1000px;
+      margin: auto;
+      background: lightskyblue;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid orange;
+      padding: 15px 0;
+    }
+
+    .item-details {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .item-details img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .item-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item-info h4 {
+      margin: 0;
+      font-size: 16px;
+      color: #222;
+    }
+
+    .item-info p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: black;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .quantity input {
+      width: 40px;
+      text-align: center;
+      padding: 5px;
+      border: 1px solid red;
+      border-radius: 5px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #007b00;
+    }
+
+    .summary {
+      margin-top: 30px;
+      text-align: right;
+    }
+
+    .summary p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .summary .total {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .checkout-btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .checkout-btn:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .summary {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cart-container">
+    <h1>Your Shopping Cart</h1>
+
+    <div class="cart-item">
+      <div class="item-details">
+        <img src="puma imgs/puma2.jpg" alt="polo tshirt">
+        <div class="item-info">
+          <h4>Polo tshirt</h4>
+          <p>Size 7</p>
+        </div>
+      </div>
+      <div class="quantity">
+        Qty: <input type="number" value="1" min="1">
+      </div>
+      <div class="price">₹1029.00</div>
+    </div>
+
+      <div class="cart-item">
+      <div class="item-details">
+        <img src="nb imgs/nb7.jpg" alt="Jaguar">
+        <div class="item-info">
+          <h4>Jaguar</h4>
+          <p>Size 8</p>
+        </div>
+      </div>
+      <div class="quantity">
+        Qty: <input type="number" value="1" min="1">
+      </div>
+      <div class="price">₹1529.00</div>
+    </div>
+
+
+     <div class="cart-item">
+      <div class="item-details">
+        <img src="ree imgs/ree4.jpg" alt="pant">
+        <div class="item-info">
+          <h4>Pant</h4>
+          <p>Size 6</p>
+        </div>
+      </div>
+      <div class="quantity">
+        Qty: <input type="number" value="1" min="1">
+      </div>
+      <div class="price">₹899.00</div>
+    </div>
+
+
+
+     <div class="cart-item">
+      <div class="item-details">
+        <img src="ree imgs/ree7.jpg" alt="Socks">
+        <div class="item-info">
+          <h4>Socks</h4>
+          <p>Size 4</p>
+        </div>
+      </div>
+      <div class="quantity">
+        Qty: <input type="number" value="1" min="1">
+      </div>
+      <div class="price">₹529.00</div>
+    </div>
+
+
+
+     <div class="cart-item">
+      <div class="item-details">
+        <img src="puma imgs/puma2.jpg" alt="Basketball">
+        <div class="item-info">
+          <h4>Nivia Engraver Basketball</h4>
+          <p>Size 7</p>
+        </div>
+      </div>
+      <div class="quantity">
+        Qty: <input type="number" value="1" min="1">
+      </div>
+      <div class="price">₹529.00</div>
+    </div>
+
+
+
+
+     <div class="cart-item">
+      <div class="item-details">
+        <img src="puma imgs/puma2.jpg" alt="Basketball">
+        <div class="item-info">
+          <h4>Nivia Engraver Basketball</h4>
+          <p>Size 7</p>
+        </div>
+      </div>
+      <div class="quantity">
+        Qty: <input type="number" value="1" min="1">
+      </div>
+      <div class="price">₹529.00</div>
+    </div>
+
+
+
+
+     <div class="cart-item">
+      <div class="item-details">
+        <img src="puma imgs/puma2.jpg" alt="Basketball">
+        <div class="item-info">
+          <h4>Nivia Engraver Basketball</h4>
+          <p>Size 7</p>
+        </div>
+      </div>
+      <div class="quantity">
+        Qty: <input type="number" value="1" min="1">
+      </div>
+      <div class="price">₹529.00</div>
+    </div>
+
+
+
+     <div class="cart-item">
+      <div class="item-details">
+        <img src="puma imgs/puma2.jpg" alt="Basketball">
+        <div class="item-info">
+          <h4>Nivia Engraver Basketball</h4>
+          <p>Size 7</p>
+        </div>
+      </div>
+      <div class="quantity">
+        Qty: <input type="number" value="1" min="1">
+      </div>
+      <div class="price">₹529.00</div>
+    </div>
+
+
+    <div class="cart-item">
+      <div class="item-details">
+        <img src="football.jpg" alt="Football">
+        <div class="item-info">
+          <h4>Nivia Simbolo Football</h4>
+          <p>Match Ball Size 5</p>
+        </div>
+      </div>
+      <div class="quantity">
+        Qty: <input type="number" value="1" min="1">
+      </div>
+      <div class="price">₹1,495.00</div>
+    </div>
+
+    <div class="cart-item">
+      <div class="item-details">
+        <img src="shoes.jpg" alt="Badminton Shoes">
+        <div class="item-info">
+          <h4>Nivia HY-Court 2.0 Shoes</h4>
+          <p>Size 9</p>
+        </div>
+      </div>
+      <div class="quantity">
+        Qty: <input type="number" value="1" min="1">
+      </div>
+      <div class="price">₹1,232.00</div>
+    </div>
+
+    <div class="summary">
+      <p>Subtotal: ₹3,256.00</p>
+      <p>Shipping: ₹100.00</p>
+      <p class="total">Total: ₹3,356.00</p>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
+

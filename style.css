@@ -1,0 +1,641 @@
+body {
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
+  height: 1200px;
+  background-image: url("background img.jpg");
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 70px;
+}
+  
+header {
+  background-color: lightsalmon;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px; 
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.left-menu, .right-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.left-menu a, .right-menu a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.left-menu a:hover, .right-menu a:hover {
+  text-decoration: underline;
+  color: white;
+  padding: 8px 15px;
+  transition: background 0.3s, color 0.3s;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+  background-color: blue;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+  h1 {
+  text-align: center;
+  color: brown;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-style: oblique;
+}
+
+.container {
+      width: 100%;
+      margin: 2px auto;
+      padding: 2px;
+      background-color: transparent;
+      border-radius: 40px;
+      padding-bottom: 10px;
+      padding-top: 1px;
+}
+
+    .top {
+      padding: 50px;
+      padding-top: 30px;
+      padding-bottom: 470px;
+      height: 350px;
+  
+      background-color: transparent;
+      color: white;
+      background-color:transparent
+      border-radius: 10px;
+      box-shadow: 0 0 10px blue;
+      width: 90%;
+      margin: 20px auto;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    h2 {
+       text-align: center;
+       color: red;
+       font-style:arial;
+      margin-bottom: 50px;
+     }
+
+      .explore-btn {
+      margin-top: 15px;
+      padding: 12px 24px;
+      background-color: green;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s ease;
+     }
+
+    .explore-btn:hover {
+      background-color: purple;
+      box-shadow: 0 0 10px red;
+}
+
+.top1 {
+      flex: 1;
+      padding: 20px;
+      padding-bottom: 10px;
+      height: 2700px;
+      padding-top: 20px;
+      background-color: transparent;
+      color: white;
+      background-color:transparent
+      border-radius: 10px;
+      box-shadow: 0 0 10px blue;
+      width: 90%;
+      margin: 0px auto;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+     .product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin: 2px auto;
+  padding: 2px;
+  background-color: transparent;
+  border-radius: 40px;
+  padding-bottom: 100px;
+}
+
+.card {
+  background-color: rgba(223, 148, 230, 0.682);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px orange;
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background-color: rgb(226, 172, 102);
+  box-shadow: 0 0 10px orange;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+  .card h2 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.price {
+  font-size: 16px;
+  color: #000;
+}
+
+.discount {
+  color: green;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+  .add-cart {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.add-cart:hover {
+  box-shadow: 0 0 10px orange;
+  transform: translateY(-10px);
+    background-color: purple;
+    box-shadow: 0 0 10px red;
+}
+
+
+
+.top11 {
+      flex: 1;
+      padding: 20px;
+      padding-bottom: 10px;
+      height: 1300px;
+      padding-top: 20px;
+      background-color: transparent;
+      color: white;
+      background-color:transparent
+      border-radius: 10px;
+      box-shadow: 0 0 10px blue;
+      width: 90%;
+      margin: 0px auto;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+     .product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin: 2px auto;
+  padding: 2px;
+  background-color: transparent;
+  border-radius: 40px;
+  padding-bottom: 100px;
+}
+
+.card {
+  background-color: rgba(223, 148, 230, 0.682);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px orange;
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background-color: rgb(226, 218, 102);
+  box-shadow: 0 0 10px orange;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+  .card h2 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.price {
+  font-size: 16px;
+  color: #000;
+}
+
+.discount {
+  color: green;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+  .add-cart {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.add-cart:hover {
+  box-shadow: 0 0 10px orange;
+  transform: translateY(-10px);
+    background-color: purple;
+    box-shadow: 0 0 10px red;
+}
+
+
+
+
+
+
+.top2 {
+
+  padding: 0px 0 0px 0;
+  border-radius: 10px;
+
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+
+  border-radius: 10px;
+
+  display: block;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+    .middle {
+      flex: 1;
+      padding: 50px;
+      padding-top: 0px;
+      padding-bottom: 550px;
+      height: 400px;
+    
+      background-color: transparent;
+      color: white;
+      background-color:transparent
+      border-radius: 10px;
+      box-shadow: 0 0 10px blue;
+      width: 90%;
+      margin: 0px auto;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+        .brands-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .brands-section h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .brands-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 120px;
+    }
+
+    .brand-card {
+      background-color: color(srgb red white blue);
+      width: 100px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .brand-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      background-color: purple;
+      box-shadow: 0 0 10px red;
+    }
+
+    .brand-card span {
+      font-size: 32px;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+       .brand-card p {
+      margin: 0;
+      font-weight: bold;
+       }
+
+    .btn {
+    padding: 5px 5px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .btn:hover {
+    background-color: orange;
+  }
+       
+ 
+    
+
+
+
+
+
+
+
+  .footer {
+     background: linear-gradient(to top, #0f0f0f, #bf07ac);
+     color: #fff;
+     font-family: Arial, sans-serif;
+     padding: 40px 20px 20px;
+}
+
+.newsletter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+   .newsletter h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(7, 247, 243);
+}
+
+.newsletter p {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subscribe input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe button {
+  margin-top: 1px;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 16px;
+}
+
+  .subscribe button:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background-color: green;
+    box-shadow: 0 0 10px red;
+  }
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.footer-section {
+  min-width: 180px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-section h3 {
+  color: #00aaff;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: yellow;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  color: #aaa;
+}
+
+   .download-container {
+            background: pink;
+            border-radius: 20px;
+            padding: 10px 10px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 60%;
+            height: 500px;
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 22px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        h1 {
+            color: red;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 15px 0;
+        }
+
+        .subtitle {
+            color: darkblue;
+            font-size: 18px;
+            margin: 0 0 40px 0;
+            line-height: 1.5;
+        }
+
+        .download-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            gap: 12px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .android-btn {
+            background: #34d399;
+            color: white;
+        }
+
+        .android-btn:hover {
+            background: #10b981;
+        }
+
+        .ios-btn {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .ios-btn:hover {
+            background: #2563eb;
+        }
+
+        .platform-icon {
+            font-size: 24px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .feature {
+            text-align: center;
+            flex: 1;
+        }
+
+        .feature-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .feature-text {
+            font-size: 14px;
+            color: black;
+            font-weight: 500;
+        }
+
+        @media (min-width: 480px) {
+            .download-buttons {
+                flex-direction: row;
+                gap: 20px;
+            }
+            
+            .download-btn {
+                flex: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .download-container {
+                padding: 40px 30px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            .subtitle {
+                font-size: 16px;
+            }
+        }
+
+
+
